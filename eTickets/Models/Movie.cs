@@ -18,15 +18,16 @@ namespace eTickets.Models
 
         //Relationship
         public List<Actor_Movie> Actors_Movies { get; set; }
-        
+
         //cinema
+
         public int CinemaId { get; set; }
-        [ForeignKey("CinemaID")]
+        [ForeignKey("CinemaId")]
         public Cinema Cinema { get; set; }
 
         //producer
         public int ProducerId { get; set; }
-        [ForeignKey("ProducerID")]
+        [ForeignKey("ProducerId")]
         public Producer Producer { get; set; }
     }
 }
